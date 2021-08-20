@@ -1,2 +1,5 @@
-# make-a-advance-calculator
-Hi, I just making a calculator. actually, i have already complete it but I trying to add more features to it, now only I making its new version. I making it from I start learning programming so, it is my first project.
+Hi, My name is Amrut
+I am from India,odisha
+I am just learning programming(Python)
+can you like to work with me?
+we will work together you help to develop my projects and i will you to deverlop your project in Python
