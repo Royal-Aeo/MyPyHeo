@@ -8,7 +8,6 @@ while user_input != "no":
     if user_want == "calculate":
         #for first number
         firstnum = float(input("Enter first number (~Only enter number not alphabet)\n"))
-
        #for second number
         secondnum = float(input("Enter second number (~Only enter number not alphabet)\n"))
 
