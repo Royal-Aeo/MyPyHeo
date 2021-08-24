@@ -32,6 +32,7 @@ while user_input != "no":
     elif user_want == "findsomeval":
         num = int(input("Enter the number which you want to know somes value of(~Only enter number not alphabets)\n"))
         operaor = input("Enter what value you want to know? **,% / exponent,reminder (~Only enter that given in options\n")
+        
         if operaor == "**" or operaor == "exponent":
             pow = int(input("Enter power of number(~Only enter number not more)\n"))
             print(num**pow)
