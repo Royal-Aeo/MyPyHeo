@@ -34,10 +34,10 @@ while user_input != "no":
         num = float(input("Enter the number which you want to know somes value of(~Only enter number not alphabets)\n"))
         operaor = input("Enter what value you want to know? **,% / exponent,reminder (~Only enter that given in options\n")
         if operaor == "**" or operaor == "exponent":
-            pow = int(input("Enter power of number(~Only enter number not more)\n"))
+            pow = float(input("Enter power of number(~Only enter number not more)\n"))
             print(num**pow)
         elif operaor == "%" or operaor == "reminder":
-            divby = int(input("Enter number which you want to divide by(~Only enter number not more)\n"))
+            divby = float(input("Enter number which you want to divide by(~Only enter number not more)\n"))
             print(num % divby)
    #if any of the condision is not same then:-
    
