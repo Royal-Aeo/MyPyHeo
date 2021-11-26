@@ -66,7 +66,6 @@ while usr_reg == False:
     nowday = nowtime[0]
     nowdate = f"{nowtime[2]} {nowtime[1]} {nowtime[4]}"
     nowtime = nowtime[3]
-    username = "Unknown"
     arrangedJsonUserData = jo.load(open("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json","r"))
     log_or_sign = myFilter(input("Please do, login or sign in[login/signin]\n"))
     
@@ -117,8 +116,9 @@ while usr_reg == False:
             if verify == "y" or verify == "yes":
                 print("Ok...\n")
                 addUserInJsonConfig("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json",takenusername,takenage,takenpassword,takensex)
-                addUserInJsonConfig("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json",takenusername,takenage,takenpassword,takensex)
-                CSVlogFil = CSVlogFil.append({"Date":nowdate,"Day":nowday,"Time":nowtime,"User":username,"Activity":f"New account created {takenusername}","AccountType":arrangedJsonUserData[username]["AccountType"]},ignore_index=True)
+                rawJsonUserDate = open("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json","r")
+                arrangedJsonUserData = jo.load(rawJsonUserDate)
+                CSVlogFil = CSVlogFil.append({"Date":nowdate,"Day":nowday,"Time":nowtime,"User":takenusername,"Activity":f"New account created","AccountType":arrangedJsonUserData[takenusername]["AccountType"]},ignore_index=True)
                 CSVlogFil.to_csv("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Log.csv",index=False)
                 print("okay...\n")
                 break
@@ -142,6 +142,8 @@ while usr_reg == False:
                 
                 # add all details to users list file
                 addUserInJsonConfig("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json",takenusername,takenage,takenpassword,takensex)
+                rawJsonUserDate = open("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json","r")
+                arrangedJsonUserData = jo.load(rawJsonUserDate)
                 CSVlogFil = CSVlogFil.append({"Date":nowdate,"Day":nowday,"Time":nowtime,"User":username,"Activity":f"New account created {takenusername}","AccountType":arrangedJsonUserData[username]["AccountType"]},ignore_index=True)
                 CSVlogFil.to_csv("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Log.csv",index=False)
                 print("okay...\n")
