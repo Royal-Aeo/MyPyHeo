@@ -117,6 +117,10 @@ while usr_reg == False:
             if verify == "y" or verify == "yes":
                 print("Ok...\n")
                 addUserInJsonConfig("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json",takenusername,takenage,takenpassword,takensex)
+                addUserInJsonConfig("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json",takenusername,takenage,takenpassword,takensex)
+                CSVlogFil = CSVlogFil.append({"Date":nowdate,"Day":nowday,"Time":nowtime,"User":username,"Activity":f"New account created {takenusername}","AccountType":arrangedJsonUserData[username]["AccountType"]},ignore_index=True)
+                CSVlogFil.to_csv("C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Log.csv",index=False)
+                print("okay...\n")
                 break
 
             # if user want to change somthing
