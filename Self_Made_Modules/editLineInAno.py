@@ -18,11 +18,13 @@ AUTHOR CONTACT:-
 emails: amrutkumarmeher@gmail.com
         Aeo_royals@outlook.com
 Github account: https://github.com/Royals-Aeo-Gamer/Heo-Leo
-Facebook account:
+Facebook account: https://www.facebook.com/amrutkumar.meher/
+Instagram account: https://www.instagram.com/amrut_kumar_meher_/
 '''
 
+
 #delLineInFil
-#write the line which have to remove
+#write the line which have to remove and if needed the add "\n".
 #the other argument is from which file(path) the line have to remove.
 def delLineLnFil(line_have_to_remove,from_file):
     read_to_make_list = open(str(from_file),"r")
