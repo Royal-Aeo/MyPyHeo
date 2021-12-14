@@ -1,99 +1,72 @@
 {
     "Amrut": {
         "Name": "Amrut",
-        "Age": 15,
-        "Gender": "Male",
+        "Age": "15",
+        "Gender": "male",
         "Password": "Amrut10",
-        "AccountType": "Admin"
+        "Friends": [
+            "Sayan",
+            "Gyani",
+            "Roshan",
+            "Kundan",
+            "Sobhan"
+        ],
+        "Hobby": "Python-Programming"
+    },
+    "Minecraft": {
+        "Name": "Minecraft",
+        "Age": "14",
+        "Gender": "male",
+        "Password": "min_mob",
+        "Friends": [
+            "enderMan",
+            "Creeer",
+            "enderDragon",
+            "cow",
+            "zombie"
+        ],
+        "Hobby": "Play minecraft"
+    },
+    "Pubg": {
+        "Name": "Pubg",
+        "Age": "16",
+        "Gender": "female",
+        "Password": "subji",
+        "Friends": [
+            "ff",
+            "COD",
+            "cyberHunter"
+        ],
+        "Hobby": "play games"
     },
     "Sudha": {
         "Name": "Sudha",
-        "Age": 13,
-        "Gender": "Female",
-        "Password": "Sudhasuper",
-        "AccountType": "Standard"
+        "Age": "14",
+        "Gender": "female",
+        "Password": "Super",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "nothing"
     },
-    "Amrut_Kumar_Meher": {
-        "Name": "Amrut_Kumar_Meher",
-        "Age": 14,
+    "Abbha": {
+        "Name": "Abbha",
+        "Age": "16",
+        "Gender": "female",
+        "Password": "AB",
+        "Friends": [
+            "noOne"
+        ],
+        "Hobby": "watching facebook"
+    },
+    "MisterEnderDragon": {
+        "Name": "MisterEnderDragon",
+        "Age": "17",
         "Gender": "male",
-        "Password": "pw",
-        "AccountType": "Standard"
-    },
-    "Auper": {
-        "Name": "Auper",
-        "Age": 15,
-        "Gender": "male",
-        "Password": "op",
-        "AccountType": "Standard"
-    },
-    "Am": {
-        "Name": "Am",
-        "Age": 12,
-        "Gender": "male",
-        "Password": "ro",
-        "AccountType": "Standard"
-    },
-    "Amrit": {
-        "Name": "Amrit",
-        "Age": 15,
-        "Gender": "male",
-        "Password": "Am",
-        "AccountType": "Standard"
-    },
-    "amrut": {
-        "Name": "amrut",
-        "Age": 15,
-        "Gender": "male",
-        "Password": "am",
-        "AccountType": "Standard"
-    },
-
-    "me":{
-        "Name":"me",
-        "Age":13,
-        "Gender":"male",
-        "Password":"mypw",
-        "AccountType":"Standard"
-    },
-
-    "minecraft":{
-        "Name":"minecraft",
-        "Age":14,
-        "Gender":"male",
-        "Password":"minecrafy_mob",
-        "AccountType":"Standard"
-    },
-
-    "Mine":{
-        "Name":"Mine",
-        "Age":12,
-        "Gender":"male",
-        "Password":"mc",
-        "AccountType":"Standard"
-    },
-
-    "AMRE":{
-        "Name":"AMRE",
-        "Age":12,
-        "Gender":"male",
-        "Password":"amre",
-        "AccountType":"Standard"
-    },
-
-    "amree":{
-        "Name":"amree",
-        "Age":12,
-        "Gender":"male",
-        "Password":"amree",
-        "AccountType":"Standard"
-    },
-
-    "Amre":{
-        "Name":"Amre",
-        "Age":12,
-        "Gender":"male",
-        "Password":"AM",
-        "AccountType":"Standard"
+        "Password": "myEgg!",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "distory players"
     }
 }
