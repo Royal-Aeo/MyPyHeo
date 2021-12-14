@@ -1,8 +1,13 @@
-Date,Day,Time,User,Activity,AccountType
-,,,,,
-26 Nov 2021,Fri,11:25:04,Amre,New account created,Standard
-26 Nov 2021,Fri,11:25:21,Amre,login into account,Standard
-26 Nov 2021,Fri,11:26:51,Mine,login into account,Standard
-26 Nov 2021,Fri,11:27:29,minecraft,login into account,Standard
-26 Nov 2021,Fri,11:29:25,Amrut,login into account,Admin
-26 Nov 2021,Fri,11:29:43,Sudha,login into account,Standard
+Date,Day,Time,User,Activity
+,,,,
+14 Dec 2021,Tue,23:03:54,Amrut,New account created
+14 Dec 2021,Tue,23:04:09,Amrut,Logging into account
+14 Dec 2021,Tue,23:04:58,Amrut,Friends are updated
+14 Dec 2021,Tue,23:05:16,Amrut,Logout from account
+14 Dec 2021,Tue,23:06:34,Minecraft,New account created
+14 Dec 2021,Tue,23:07:32,Pubg,New account created
+14 Dec 2021,Tue,23:08:34,Sudha,New account created
+14 Dec 2021,Tue,23:09:25,Abbha,New account created
+14 Dec 2021,Tue,23:10:19,MisterEnderDragon,New account created
+14 Dec 2021,Tue,23:10:52,Abbha,Logging into account
+14 Dec 2021,Tue,23:11:00,Abbha,Logout from account
