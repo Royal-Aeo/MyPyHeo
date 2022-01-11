@@ -1,6 +1,6 @@
 #Importing all the packages we need for programme
 from playsound import playsound
-from func import Filter as fi
+from func import MyMod as fi
 
 #Making classes for different varable
 #Class for directories

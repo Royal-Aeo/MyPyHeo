@@ -6,8 +6,8 @@ from func.MyMod import myFilter
 import time as tim
 
 #Global varables
-LoggingPage_Data__path = "C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Data.json"
-LoggingPage_Log__path = "C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\LoggingPage\\LoggingPage_Log.csv"
+LoggingPage_Data__path = "C:\\Users\\aeo_r\\Coding\\languages\\Python\\Git_Repositories\\MyPyHeo\\MyProjs\\Logging_Page\\LoggingPage2\\LoggingPage_Data.json"
+LoggingPage_Log__path = "C:\\Users\\aeo_r\\Coding\\languages\\Python\\Git_Repositories\\MyPyHeo\\MyProjs\\Logging_Page\\LoggingPage2\\LoggingPage_Log.csv"
 
 #defined all the functions have to use in code
 
