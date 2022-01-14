@@ -68,5 +68,15 @@
             "no"
         ],
         "Hobby": "distory players"
+    },
+    "Racer": {
+        "Name": "Racer",
+        "Age": "12",
+        "Gender": "female",
+        "Password": "car",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "Racing"
     }
 }

@@ -44,7 +44,7 @@ while user_input != "no":
         elif operaor == "%" or operaor == "reminder":
             divby = float(input("Enter number which you want to divide by(~Only enter number not more)\n"))
             print(num % divby)
-    # if any of the condision is not same then:-
+    # if any of the condition is not same then:-
    
     # in this type of case usually problem present in data that giver by user(user give data in wrong way)
     else:

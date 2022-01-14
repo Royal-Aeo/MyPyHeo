@@ -28,14 +28,17 @@ class musfil:
     def showaddress(self):
         print(self.address)
 
+# Some global variables
+dir_alan_path = "Coding\\languages\\MyPython\\projsyntax\\Musplayer\\mus_dir\\Alan_Walker"
+dir_neha_path = "Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Neha_kakkar"
 # Some extra settings before main code
 usr_run = True
 # this is objects of class0
-Alan_walker = dir("Alan_Walker",['all_falls_down','alone','faded','lily','sing_me_to_sleep','spectre'],'Coding\\languages\\MyPython\\projsyntax\\Musplayer\\mus_dir\\Alan_Walker')
-Neha_kakkar = dir("Neha_Kakkar",['dil_ko_karaar_aaya','garmi','taaron_ke_shehar','yaad_piya_ki_aane_lagi'],'Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Neha_kakkar')
+Alan_walker = dir("Alan_Walker",['all_falls_down','alone','faded','lily','sing_me_to_sleep','spectre'],dir_alan_path)
+Neha_kakkar = dir("Neha_Kakkar",['dil_ko_karaar_aaya','garmi','taaron_ke_shehar','yaad_piya_ki_aane_lagi'],dir_neha_path)
 # this is objects of class1
 # Alan_Walker
-all_falls_down = musfil("all_falls_down",'3:40','C:\\users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\Alan_Walker\\all_falls_down.wav')
+all_falls_down = musfil("all_falls_down",'3:40','\\all_falls_down.wav')
 alone = musfil("alone",'2:41','C:\\Users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Alan_Walker\\alone.wav')
 faded = musfil("faded",'3:33','C:\\users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Alan_Walker\\faded.wav')
 lily = musfil("lily",'3:16','C:\\users\\AMRUT\\Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Alan_Walker\\lily.wav')

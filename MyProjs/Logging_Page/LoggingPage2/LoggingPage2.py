@@ -1,9 +1,9 @@
 #Importing all the files and moules that we need in the project
-import pandas as pa
 import json as jo
-from func.editLineInAno import *
-from func.MyMod import myFilter
 import time as tim
+import pandas as pa
+
+from func.MyMod import myFilter
 
 #Global varables
 LoggingPage_Data__path = "C:\\Users\\aeo_r\\Coding\\languages\\Python\\Git_Repositories\\MyPyHeo\\MyProjs\\Logging_Page\\LoggingPage2\\LoggingPage_Data.json"
@@ -84,12 +84,12 @@ class nowTime:
         nowtime = list((tim.ctime()).split())
         return f"{nowtime[2]} {nowtime[1]} {nowtime[4]}"
     @classmethod
-    def nowMonth():
+    def nowMonth(self):
         r"it wil output current month"
         nowtime = list((tim.ctime()).split())
         return nowtime[1]
     @classmethod
-    def nowYear():
+    def nowYear(self):
         r"it will output current year"
         nowtime = list((tim.ctime()).split())
         return nowtime[4]
