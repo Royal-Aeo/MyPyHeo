@@ -1,0 +1,36 @@
+{
+    "dirs":{
+        "Alan_Walker":{"path":"F:\\Extra_samples\\",
+            "containing_s":[
+                "all_falls_down",
+                "alone",
+                "faded",
+                "lily",
+                "sing_me_to_sleep",
+                "spectre"
+                ]
+            },
+        "Neha_Kakkar":{"path":"Coding\\languages\\MyPython\\projsyntax\\MusPlayer\\mus_dir\\Neha_kakkar",
+            "containing_s":[
+                "dil_ko_karaar_aaya",
+                "garmi",
+                "taaron_ke_shehar",
+                "yaad_piya_ki_aane_lagi"
+                ]
+            }
+    },
+    "extension":".wav",
+    "Total_songs":[
+        "all_falls_down",
+        "alone",
+        "faded",
+        "lily",
+        "sing_me_to_sleep",
+        "spectre",
+        "dil_ko_karaar_aaya",
+        "garmi",
+        "taaron_ke_shehar",
+        "yaad_piya_ki_aane_lagi"
+    ]
+
+}
