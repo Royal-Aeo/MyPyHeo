@@ -2,7 +2,6 @@
 import json as jo
 import time as tim
 import pandas as pa
-
 from func.MyMod import myFilter
 
 #Global varables
