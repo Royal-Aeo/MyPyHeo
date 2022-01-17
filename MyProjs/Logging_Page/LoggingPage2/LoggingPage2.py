@@ -9,7 +9,6 @@ from func.user import myFilter
 
 LoggingPage_Data__path = __file__.replace("LoggingPage2.py","LoggingPage_Data.json")
 LoggingPage_Log__path = __file__.replace("LoggingPage2.py","LoggingPage_Log.csv")
-print(LoggingPage_Data__path)
 
 #defined all the functions have to use in code
 
