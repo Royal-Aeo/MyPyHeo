@@ -129,7 +129,59 @@ userdata is present below
 #### __LoggingPage2:__
 it is some complicated but very cool.
 
-first it will ask for login and signup. if you choose login then it will take you to login section you have to give your username and password(if you have already signup). here below console looking like this...
-```Python
+first it will ask for login and signup. if you choose login then it will take you to login section you have to give your username and password(if you have already signup).
 
+if we choose to `login` or `signin`. the we have to give username and password(as shown below).
+```Python
+Welcome!
+
+Please do, login or register in[(login/signin)/signup/exit]
+login # This is input
+Enter your username
+Amrut # This is input
+Enter your password
+Amrut10  # This is input
+Hi,Amrut
+Menu options:-
+>.show_my_info
+>.update_my_info
+>.del_my_account
+>.show_my_friends
+>.log_out
 ```
+we can choose any option from this there are given in menu.
+
+Or, if we choose `signup` the it ask for some of your information(as shown below).
+```Python
+Welcome!
+
+Please do, login or register in[(login/signin)/signup/exit]
+signup # This is input
+Enter the username
+Ayush # This is input
+Enter the password
+Ay10 # This is input
+User age is
+13 # This is input
+User gender
+male # This is input
+If you have friends then enter space separate name, if not then enter 'no'[list(<names>/no)
+no # This is input
+What is your hobby?
+playing # This is input
+Verify the information is correct or not:-
+ >Username: Ayush
+ >Password:Ay10
+ >User Age:13
+ >UserGender:male
+ >UserHobby:playing
+ >User friends:['no']
+Every information is correct?[y/n]?
+y # This is input
+Ok...
+
+okay...
+```
+after this, it will create your profile in data file.
+
+and if you choose `exit` the it will close this program.
