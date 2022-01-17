@@ -39,16 +39,6 @@
         ],
         "Hobby": "play games"
     },
-    "Sudha": {
-        "Name": "Sudha",
-        "Age": "14",
-        "Gender": "female",
-        "Password": "Super",
-        "Friends": [
-            "no"
-        ],
-        "Hobby": "nothing"
-    },
     "Abbha": {
         "Name": "Abbha",
         "Age": "16",
