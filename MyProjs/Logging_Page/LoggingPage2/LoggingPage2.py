@@ -2,11 +2,13 @@
 import json as jo
 import time as tim
 import pandas as pa
-from func.MyMod import myFilter
+from func.user import myFilter
+
 
 #Global varables
-LoggingPage_Data__path = "C:\\Users\\aeo_r\\Coding\\languages\\Python\\Git_Repositories\\MyPyHeo\\MyProjs\\Logging_Page\\LoggingPage2\\LoggingPage_Data.json"
-LoggingPage_Log__path = "C:\\Users\\aeo_r\\Coding\\languages\\Python\\Git_Repositories\\MyPyHeo\\MyProjs\\Logging_Page\\LoggingPage2\\LoggingPage_Log.csv"
+
+LoggingPage_Data__path = __file__.replace("LoggingPage2.py","LoggingPage_Data.json")
+LoggingPage_Log__path = __file__.replace("LoggingPage2.py","LoggingPage_Log.csv")
 
 #defined all the functions have to use in code
 
