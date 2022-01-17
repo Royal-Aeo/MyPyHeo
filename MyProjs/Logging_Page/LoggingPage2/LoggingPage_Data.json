@@ -1,0 +1,82 @@
+{
+    "Amrut": {
+        "Name": "Amrut",
+        "Age": "15",
+        "Gender": "male",
+        "Password": "Amrut10",
+        "Friends": [
+            "Sayan",
+            "Gyani",
+            "Roshan",
+            "Kundan",
+            "Sobhan"
+        ],
+        "Hobby": "Python-Programming"
+    },
+    "Minecraft": {
+        "Name": "Minecraft",
+        "Age": "14",
+        "Gender": "male",
+        "Password": "min_mob",
+        "Friends": [
+            "enderMan",
+            "Creeer",
+            "enderDragon",
+            "cow",
+            "zombie"
+        ],
+        "Hobby": "Play minecraft"
+    },
+    "Pubg": {
+        "Name": "Pubg",
+        "Age": "16",
+        "Gender": "female",
+        "Password": "subji",
+        "Friends": [
+            "ff",
+            "COD",
+            "cyberHunter"
+        ],
+        "Hobby": "play games"
+    },
+    "Abbha": {
+        "Name": "Abbha",
+        "Age": "16",
+        "Gender": "female",
+        "Password": "AB",
+        "Friends": [
+            "noOne"
+        ],
+        "Hobby": "watching facebook"
+    },
+    "MisterEnderDragon": {
+        "Name": "MisterEnderDragon",
+        "Age": "17",
+        "Gender": "male",
+        "Password": "myEgg!",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "distory players"
+    },
+    "Racer": {
+        "Name": "Racer",
+        "Age": "12",
+        "Gender": "female",
+        "Password": "car",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "Racing"
+    },
+    "Ayush": {
+        "Name": "Ayush",
+        "Age": "13",
+        "Gender": "male",
+        "Password": "Ay10",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "playing"
+    }
+}
