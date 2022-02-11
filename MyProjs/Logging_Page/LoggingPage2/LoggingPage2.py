@@ -319,6 +319,7 @@ while usr_itract_pross == True:
                         if var == "y" or var == "yes":
                             del_account_json(username,LoggingPage_Data__path)
                             print("Your account delete successfully!\n")
+                            append_to_log(LoggingPage_Log__path,username,"Account deleted!")
                             usr_itract_pross = False
                             log_on = False
                             break
