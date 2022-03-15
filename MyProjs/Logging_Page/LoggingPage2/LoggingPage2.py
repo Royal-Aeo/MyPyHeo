@@ -255,7 +255,7 @@ while usr_itract_pross == True:
                 arrangedJsonUserData = jo.load(rawJsonUserDate)
 
                 #what user want from menu
-                usr_wan = myFilter(input("Menu options:-\n>.show_my_info\n>.update_my_info\n>.del_my_account\n>.show_my_friends\n>.show_logs\n>.show_usrs\n>.log_out\n"))
+                usr_wan = myFilter(input("Menu options:-\n>.show_my_info\n>.update_my_info\n>.del_my_account\n>.show_my_friends\n>.show_logs\n>.show_usrs\n>.clear_logs\n>.log_out\n"))
                 #if they want to see his inforamation
                 if usr_wan == "show_my_info":
                     print(f">Your username:- {arrangedJsonUserData[username]['Name']}\n>Your password is:- {arrangedJsonUserData[username]['Password']}\n>Your Age is:- {arrangedJsonUserData[username]['Age']}\n>Your Gender is:- {arrangedJsonUserData[username]['Gender']}\n>Your hobby is:- {arrangedJsonUserData[username]['Hobby']}\n>Your friend list is:- {arrangedJsonUserData[username]['Friends']}\n")
@@ -349,7 +349,7 @@ while usr_itract_pross == True:
                     for friend in arrangedJsonUserData[username]["Friends"]:
                         print(friend)
                     tim.sleep(5)
-                    
+
                 #want to see logs
                 elif usr_wan == "show_logs":
                     print(ShowLogs())
@@ -360,6 +360,12 @@ while usr_itract_pross == True:
                     print(ShowUsr())
                     tim.sleep(5)
                 
+                #clear_logs
+                elif usr_wan == "clear_logs":
+                    var = pa.DataFrame({"Date":[None],"Day":[None],"Time":[None],"User":[None],"Activity":[None]})
+                    var.to_csv(LoggingPage_Log__path,index=False)
+                    tim.sleep(5)
+
                 #want to logout from the account
                 elif usr_wan == "log_out":
                     append_to_log(LoggingPage_Log__path,username,"Logout from account")
