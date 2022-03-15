@@ -140,6 +140,7 @@ except pa.errors.EmptyDataError:
 
 # loop for user interaction
 usr_itract_pross = True
+print("For info type 'developer_details'")
 # untill user is not regorised the loop is going on
 while usr_itract_pross == True:
     user_regon = False
@@ -232,6 +233,16 @@ while usr_itract_pross == True:
                 #indicating all process complete!
                 print("okay...\n")
                 break
+                    
+    elif log_or_sign == "developer_details":
+        print("\n\nDeveloper: Amrut Kumar Meher\n")
+        print("Developer Contact: amrutkumarmeher@gmail.com or Aeo_royals@outlook.com\n")
+        print("Dear Users\n\tI wish you all enjoy this app(Yeah I know it has nothing enjoyable but after that also, enjoy it!). I made this app because coding is my hobby. and, I will happy if you feedback to me about this app.\n")
+        print("Your lovely [relative, friend, student, who see this message whatever I'm of that person]\n")
+        print("Amrut Kumar Meher\n\n")
+        input("Enter something to continue...")
+
+
     #if they want to exit
     elif log_or_sign == 'exit':
         usr_itract_pross=False
@@ -364,6 +375,7 @@ while usr_itract_pross == True:
                 elif usr_wan == "clear_logs":
                     var = pa.DataFrame({"Date":[None],"Day":[None],"Time":[None],"User":[None],"Activity":[None]})
                     var.to_csv(LoggingPage_Log__path,index=False)
+                    print("\n")
                     tim.sleep(5)
 
                 #want to logout from the account
@@ -371,6 +383,7 @@ while usr_itract_pross == True:
                     append_to_log(LoggingPage_Log__path,username,"Logout from account")
                     usr_itract_pross = False   #after this they will directly go-
                     log_on = False             #-to logging section
+
                 #if user given input in wrong way
                 else:
                     print("No scho option! please give input from the given options.\n")
