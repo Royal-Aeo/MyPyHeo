@@ -18,6 +18,15 @@ def myFilter(var):
     var = var.replace(" ","")
     return var
 
+#showUsr
+def ShowUsr(*arg):
+    file = (pa.DataFrame(jo.load(open(LoggingPage_Data__path))))
+    return (file.T)[["Name","Age","Gender","Hobby"]]
+
+#ShowLogs
+def ShowLogs():
+    return pa.read_csv(LoggingPage_Log__path)
+
 #json form
 def json_form(userName,useraAge,userPasword,userGender,friends,hobby):
     r"it will make a json string from python dict for user"
@@ -246,7 +255,7 @@ while usr_itract_pross == True:
                 arrangedJsonUserData = jo.load(rawJsonUserDate)
 
                 #what user want from menu
-                usr_wan = myFilter(input("Menu options:-\n>.show_my_info\n>.update_my_info\n>.del_my_account\n>.show_my_friends\n>.log_out\n"))
+                usr_wan = myFilter(input("Menu options:-\n>.show_my_info\n>.update_my_info\n>.del_my_account\n>.show_my_friends\n>.show_logs\n>.show_usrs\n>.log_out\n"))
                 #if they want to see his inforamation
                 if usr_wan == "show_my_info":
                     print(f">Your username:- {arrangedJsonUserData[username]['Name']}\n>Your password is:- {arrangedJsonUserData[username]['Password']}\n>Your Age is:- {arrangedJsonUserData[username]['Age']}\n>Your Gender is:- {arrangedJsonUserData[username]['Gender']}\n>Your hobby is:- {arrangedJsonUserData[username]['Hobby']}\n>Your friend list is:- {arrangedJsonUserData[username]['Friends']}\n")
@@ -339,7 +348,17 @@ while usr_itract_pross == True:
                     arrangedJsonUserData = jo.load(rawJsonUserDate)
                     for friend in arrangedJsonUserData[username]["Friends"]:
                         print(friend)
-                    tim.sleep(6)
+                    tim.sleep(5)
+                    
+                #want to see logs
+                elif usr_wan == "show_logs":
+                    print(ShowLogs())
+                    tim.sleep(5)
+
+                #want to see users
+                elif usr_wan == "show_usrs":
+                    print(ShowUsr())
+                    tim.sleep(5)
                 
                 #want to logout from the account
                 elif usr_wan == "log_out":
