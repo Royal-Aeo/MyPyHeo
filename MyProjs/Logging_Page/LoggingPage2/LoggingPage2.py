@@ -2,7 +2,6 @@
 import json as jo
 import time as tim
 import pandas as pa
-from func.user import myFilter
 
 
 #Global varables
@@ -11,6 +10,13 @@ LoggingPage_Data__path = __file__.replace("LoggingPage2.py","LoggingPage_Data.js
 LoggingPage_Log__path = __file__.replace("LoggingPage2.py","LoggingPage_Log.csv")
 
 #defined all the functions have to use in code
+
+#myFilter
+def myFilter(var):
+    var = str(var)
+    var = var.lower()
+    var = var.replace(" ","")
+    return var
 
 #json form
 def json_form(userName,useraAge,userPasword,userGender,friends,hobby):
@@ -63,7 +69,7 @@ def append_to_log(log_file,username,activity):
     r"it will append a log history to log file"
     r"the file should be: xls, csv"
     CSVlogFil = pa.read_csv(log_file)
-    CSVlogFil = CSVlogFil.append({"Date":nowTime.nowDate(),"Day":nowTime.nowDay(),"Time":nowTime.nowTime(),"User":username,"Activity":f"{activity}"},ignore_index=True)
+    CSVlogFil = pa.concat([CSVlogFil,pa.DataFrame({"Date":[nowTime.nowDate()],"Day":[nowTime.nowDay()],"Time":[nowTime.nowTime()],"User":[username],"Activity":[f"{activity}"]})],ignore_index=True)
     CSVlogFil.to_csv(log_file,index=False)
 #nowTime
 #it can show current time,day,date,month,year
