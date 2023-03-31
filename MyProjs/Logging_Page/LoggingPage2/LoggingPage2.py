@@ -2,7 +2,7 @@
 import json as jo
 import time as tim
 import pandas as pa
-
+import pyinputplus
 
 #Global varables
 
@@ -156,7 +156,7 @@ while usr_itract_pross == True:
     if log_or_sign == "login" or log_or_sign == "signin":
         while True:
             takenusername = input("Enter your username\n")
-            takenpassword = input("Enter your password\n")
+            takenpassword = pyinputplus.inputPassword("Enter your password\n")
 
             # if user is regornised then it will save a login history
             if takenusername in arrangedJsonUserData and takenpassword == arrangedJsonUserData[takenusername]["Password"]:
@@ -185,19 +185,19 @@ while usr_itract_pross == True:
 
             # this will take every information about user
             takenusername =    input("Enter the username\n")
-            takenpassword =    input("Enter the password\n")
+            takenpassword =    pyinputplus.inputPassword("Enter the password\n")
             takenage =         input("User age is\n")
             takensex =         input("User gender\n")
             takenfriends= list(input("If you have friends then enter space separate name, if not then enter 'no'[list(<names>/no)\n").split(" "))
             takenhobby   =     input("What is your hobby?\n")
             # it print input for verification that can user want to change its his/her details
-            print(f"Verify the information is correct or not:-\n >Username: {takenusername}\n >Password:{takenpassword}\n >User Age:{takenage}\n >UserGender:{takensex}\n >UserHobby:{takenhobby}\n >User friends:{takenfriends}")
+            print(f"Verify the information is correct or not:-\n >Username: {takenusername}\n >User Age:{takenage}\n >UserGender:{takensex}\n >UserHobby:{takenhobby}\n >User friends:{takenfriends}")
             verify = myFilter(input("Every information is correct?[y/n]?\n"))
 
             # if every thing is correct
             if verify == "y" or verify == "yes":
                 print("Ok...\n")
-                addUserInJsonConfig(LoggingPage_Data__path,takenusername,takenage,takenpassword,takensex,takenfriends,takenhobby)
+                addUserInJsonConfig(LoggingPage_Data__path,takenusername,takenage,takensex,takenpassword,takenfriends,takenhobby)
                 rawJsonUserDate = open(LoggingPage_Data__path,"r")
                 arrangedJsonUserData = jo.load(rawJsonUserDate)
                 append_to_log(LoggingPage_Log__path,takenusername,"New account created")
@@ -210,7 +210,7 @@ while usr_itract_pross == True:
                 if whatWrong == 'username':
                     takenusername = input("Enter user name\n")
                 elif whatWrong == 'password':
-                    takenpassword = input("Enter password\n")
+                    takenpassword = pyinputplus.inputPassword("Enter password\n")
                 elif whatWrong == 'age':
                     takenage = input("Enter age\n")
                 elif whatWrong == "gender":
@@ -221,13 +221,13 @@ while usr_itract_pross == True:
                     takenfriends = list(input("If you have friends then enter space separate name, if not then enter 'no'[list(<names>/no)\n").split(" "))
                 elif whatWrong == 'i_want-to_fill-details_again':
                     takenusername = input("Enter user name\n")
-                    takenpassword = input("Enter password\n")
+                    takenpassword = pyinputplus.inputPassword("Enter password\n")
                     takenage = input("Enter age\n")
                     takensex = input("Enter gender\n")
                     takenfriends = list(input("If you have friends then enter space separate name, if not then enter 'no'[list(<names>/no)\n").split(" "))
                     takenhobby = input("What is your hobby?\n")
                 # add all details to users list file
-                addUserInJsonConfig(LoggingPage_Data__path,takenusername,takenage,takenpassword,takensex,takenfriends,takenhobby)
+                addUserInJsonConfig(LoggingPage_Data__path,takenusername,takenage,takensex,takenfriends,takenhobby)
                 rawJsonUserDate = open(LoggingPage_Data__path,"r")
                 arrangedJsonUserData = jo.load(rawJsonUserDate)
                 #indicating all process complete!
@@ -336,7 +336,7 @@ while usr_itract_pross == True:
                         else:
                             print("No scho option! please give input from the given options.\n")
                 
-                #waht to delete her/his account
+                #want to delete her/his account
                 elif usr_wan == "del_my_account":
                     while True:
                         print("Warning:-\n>After you turn off this program you won't be recognised by the program until you have registered by the program\n")

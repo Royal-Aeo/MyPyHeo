@@ -8,5 +8,42 @@
             "no"
         ],
         "Hobby": "code"
+    },
+    "AmrutMeher": {
+        "Name": "AmrutMeher",
+        "Age": "16",
+        "Gender": "male",
+        "Password": "Amrutii",
+        "Friends": [
+            "Ambrosia",
+            "VendettaX",
+            "Creeper",
+            "Osprey"
+        ],
+        "Hobby": "Code"
+    },
+    "Creeper": {
+        "Name": "Creeper",
+        "Age": "15",
+        "Gender": "male",
+        "Password": "Creepy",
+        "Friends": [
+            "zombie",
+            "skeleton",
+            "ender_man",
+            "pigslings",
+            "black_skeleton"
+        ],
+        "Hobby": "Explose"
+    },
+    "Zombie": {
+        "Name": "Zombie",
+        "Age": "17",
+        "Gender": "female",
+        "Password": "Zombie",
+        "Friends": [
+            "no"
+        ],
+        "Hobby": "die"
     }
 }
